@@ -1,0 +1,87 @@
+body{
+    min-width: 450px;
+}
+#INGATLANOK {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    width: auto;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+#INGATLANOK h3 {
+    text-align: center;
+}
+.ingatlan {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid gainsboro;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.ingatlan div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ingatlan img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.fejlec {
+    border: 1px solid gainsboro;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.fejlec div .col {
+    text-align: center;
+    padding: 1rem;
+}
+.form div{
+    margin-top: 1rem;
+}
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    outline: none;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    padding: 0.5rem;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input[type="checkbox"] {
+    display: inline !important;
+    min-width: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .fejlec {
+        display: none;
+    }
+    .row {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .ingatlan .col{
+        display: none;
+    }
+    .ingatlan .kep,.ingatlan .leiras{
+            display: flex;
+    }
+    .form{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+}
